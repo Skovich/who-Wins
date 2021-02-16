@@ -15,7 +15,7 @@ public class Execut {
 		for (Question q : questions) {
 			SecondScreen second = new SecondScreen(q);
 			JFrame tmp = second.initialize();
-			list.add(tmp);
+			list.add(tmp); 
 
 		}
 
