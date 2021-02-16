@@ -1,4 +1,3 @@
-package who;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -17,6 +16,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
+import java.awt.Color;
 public class FirstScreen {
 
 	private JFrame frame;
@@ -57,13 +57,14 @@ public class FirstScreen {
 	 */
 	public JFrame initialize() throws IOException {
 		frame = new JFrame();
-		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\MSI\\Documents\\klausur\\Who Wins\\images\\logo.png"));
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("images/logo.png"));
 		frame.setBounds(100, 100, 1330, 746);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		frame.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("images/background.jpg")))));
 		
 		JLabel lblNewLabel = new JLabel("Welcome to The Game");
+		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 86));
 		lblNewLabel.setBounds(213, 11, 902, 223);
 		frame.getContentPane().add(lblNewLabel);
